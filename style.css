@@ -2,7 +2,7 @@
     --branco-principal: #fff;
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167bf7;
-    --botao-azul-hover: #338bf7;
+    --botao-azul-hover: #4096ff;
     --cor-de-fundo: #00030c;
     --fonte-principal: 'Inter';
 }
@@ -47,6 +47,7 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+    transition: 0.3s ease-in-out;
 }
 
 .container__botao:hover {
@@ -57,6 +58,7 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+    transition: 0.5s ease-in-out;
 }
 
 .botao_secundario {
@@ -115,4 +117,58 @@ body {
 
 .container__descricao {
     padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: var(--botao-azul-hover);
+}
+
+.rodape__texto {
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
 }
